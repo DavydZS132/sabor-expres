@@ -28,7 +28,18 @@ def cadastrar_novo_restaurante():
     nome_do_restaurante = input('Digite o nome do restaurante que deseja cadastrar: ')
     restaurantes.append(nome_do_restaurante)
     print(f'O restaurante {nome_do_restaurante} foi cadastrado com sucesso.\n')
-    input('Digite uma tecla para voltar ao meno: ')
+    input('\nDigite uma tecla para voltar ao meno: ')
+    main()
+
+def listar_restaurantes():
+    os.system('cls')
+    print('Listar os restaurantes\n')
+
+    # para cada restaurantes  nalista restaurantes:
+    for restaurante in restaurantes:
+        print(f'.{restaurante}')
+
+    input('\nDigite uma tecla para voltar ao meno: ')
     main()
 
 def exolher_opcao():
@@ -39,7 +50,7 @@ def exolher_opcao():
             print('Cadastrar restaurante')
             cadastrar_novo_restaurante()
         elif opcao_escolhida == 2:
-            print('Listar restaurantes')
+            listar_restaurantes()
         elif opcao_escolhida == 3:
             print('Ativar restaurantes')
         elif opcao_escolhida == 4:
