@@ -80,7 +80,6 @@ def exolher_opcao():
         opcao_escolhida = int(input('Escolha a opção: '))
 
         if opcao_escolhida == 1:
-            print('Cadastrar restaurante')
             cadastrar_novo_restaurante()
         elif opcao_escolhida == 2:
             listar_restaurantes()
